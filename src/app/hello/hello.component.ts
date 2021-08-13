@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'hello',
   templateUrl: './hello.component.html',
-  styleUrls: [`
+  styles: [`
     .text-success {
       color: green;
     }
@@ -18,7 +18,15 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class HelloComponent implements OnInit {
-  public name = 'Abdullah'
+  public name = 'Abdullah';
+  public hasError = false;
+  public isSpecial = true;
+  public messageStyles = {
+    'text-success': !this.hasError,
+    'text-danger': this.hasError,
+    'text-special': this.isSpecial
+  }
+
   constructor() { }
 
   ngOnInit(): void {
