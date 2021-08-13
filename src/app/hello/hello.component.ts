@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
       color: green;
     }
 
-    .text-danager {
+    .text-danger {
       color: red;
     }
 
@@ -19,13 +19,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
   public name = 'Abdullah';
-  public hasError = false;
+  public hasError = true;
   public isSpecial = true;
   public messageStyles = {
     'text-success': !this.hasError,
     'text-danger': this.hasError,
     'text-special': this.isSpecial
   }
+
+  public highlightColor = 'orange';
 
   constructor() { }
 
