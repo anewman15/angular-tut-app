@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { builtinModules } from 'module';
 
 @Component({
   selector: 'hello',
@@ -25,6 +26,11 @@ export class HelloComponent implements OnInit {
     'text-success': !this.hasError,
     'text-danger': this.hasError,
     'text-special': this.isSpecial
+  }
+
+  public greetingStyles = {
+    color: "blue",
+    fontStyle: "italic"
   }
 
   public highlightColor = 'orange';
