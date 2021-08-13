@@ -12,4 +12,7 @@ export class HelloComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  greetUser() {
+    return `Hello, ${this.name} from class method!`
+  }
 }
