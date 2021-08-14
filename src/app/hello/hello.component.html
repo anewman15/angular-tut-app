@@ -14,3 +14,10 @@
 <div *ngIf="name; then thenBlock; else elseBlock"></div>
 <ng-template #thenBlock>{{greetUser()}}</ng-template>
 <ng-template #elseBlock>{{greeting}}</ng-template>
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'blue'">You picked blue</div>
+  <div *ngSwitchCase="'red'">You picked red</div>
+  <div *ngSwitchCase="'yellow'">You picked yellow</div>
+  <div *ngSwitchCaseDefault>Please pick a color</div>
+</div>
