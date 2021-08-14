@@ -36,7 +36,7 @@ export class HelloComponent implements OnInit {
   public greeting = `Hi Anonymous`;
   public color = 'blue';
 
-  public names = ['Abdullah',' Abu Bakar', 'Mamun', 'AKalam',' Nadira', 'Khadiza'];
+  public names = ['Abdullah',' Abu Bakar', 'Mamun', 'AKalam',' Nadira', 'Khadiza', 'Hasina', 'Sahera'];
 
   constructor() { }
 
