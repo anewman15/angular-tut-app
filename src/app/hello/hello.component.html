@@ -2,7 +2,15 @@
 <p [ngClass]="messageStyles">{{greetUser()}}</p>
 <p [style.color]="highlightColor">{{greetUser()}}</p>
 <p [ngStyle]="greetingStyles">{{greetUser()}}</p>
-<button (click)="onClick($event)">Greet</button>
-<p *ngIf="greeting">{{greeting}}</p>
-<input [(ngModel)]="name" type="text">
+<div>
+  <button (click)="onClick($event)">Greet</button>
+</div>
+<p *ngIf="name">{{greeting}}</p>
+<div>
+  <input [(ngModel)]="name" type="text">
+</div>
 <div *ngIf="name">{{greetUser()}}</div>
+
+<div *ngIf="name; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>{{greetUser()}}</ng-template>
+<ng-template #elseBlock>{{greeting}}</ng-template>

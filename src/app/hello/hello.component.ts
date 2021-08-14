@@ -33,7 +33,7 @@ export class HelloComponent implements OnInit {
   }
 
   public highlightColor = 'orange';
-  public greeting = ''
+  public greeting = `Hi Anonymous`
 
   constructor() { }
 
