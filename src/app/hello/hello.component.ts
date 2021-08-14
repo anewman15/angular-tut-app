@@ -44,8 +44,8 @@ export class HelloComponent implements OnInit {
     return `Hello, ${this.name} from class method!`
   }
 
-  onClick() {
-    window.alert(`Hellow ${this.name}!`)
-    this.greeting = `Hello ${this.name}!`
+  onClick(event: any) {
+   console.log(event)
+    this.greeting = `${event.type}!`
   }
 }

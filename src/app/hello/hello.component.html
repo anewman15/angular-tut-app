@@ -2,5 +2,5 @@
 <p [ngClass]="messageStyles">{{greetUser()}}</p>
 <p [style.color]="highlightColor">{{greetUser()}}</p>
 <p [ngStyle]="greetingStyles">{{greetUser()}}</p>
-<button (click)="onClick()">Greet</button>
+<button (click)="onClick($event)">Greet</button>
 <p>{{greeting}}</p>
