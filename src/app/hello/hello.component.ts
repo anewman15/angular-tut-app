@@ -33,6 +33,7 @@ export class HelloComponent implements OnInit {
   }
 
   public highlightColor = 'orange';
+  public greeting = ''
 
   constructor() { }
 
@@ -45,5 +46,6 @@ export class HelloComponent implements OnInit {
 
   onClick() {
     window.alert(`Hellow ${this.name}!`)
+    this.greeting = `Hello ${this.name}!`
   }
 }
