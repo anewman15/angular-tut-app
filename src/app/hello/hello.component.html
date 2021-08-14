@@ -3,6 +3,6 @@
 <p [style.color]="highlightColor">{{greetUser()}}</p>
 <p [ngStyle]="greetingStyles">{{greetUser()}}</p>
 <button (click)="onClick($event)">Greet</button>
-<p>{{greeting}}</p>
+<p *ngIf="greeting">{{greeting}}</p>
 <input [(ngModel)]="name" type="text">
-<div>{{name}}</div>
+<div *ngIf="name">{{greetUser()}}</div>

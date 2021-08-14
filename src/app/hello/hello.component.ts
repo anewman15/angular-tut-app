@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class HelloComponent implements OnInit {
-  public name = 'Abdullah';
+  public name = '';
   public hasError = true;
   public isSpecial = true;
   public messageStyles = {
