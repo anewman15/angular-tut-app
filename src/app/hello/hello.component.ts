@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { builtinModules } from 'module';
 
 @Component({
   selector: 'hello',
@@ -42,5 +41,9 @@ export class HelloComponent implements OnInit {
 
   greetUser() {
     return `Hello, ${this.name} from class method!`
+  }
+
+  onClick() {
+    window.alert(`Hellow ${this.name}!`)
   }
 }
