@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'hello',
@@ -18,6 +18,7 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class HelloComponent implements OnInit {
+  @Input('parentData') public myName: any;
   public name = '';
   public hasError = true;
   public isSpecial = true;
