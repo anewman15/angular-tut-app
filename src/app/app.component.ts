@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-tut-app';
   public name = 'Abdullah';
+  public message = '';
 }

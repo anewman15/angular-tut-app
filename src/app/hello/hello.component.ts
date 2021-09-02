@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'hello',
@@ -19,6 +19,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
   @Input('parentData') public myName: any;
+  @Output() public childEvent = new EventEmitter();
   public name = '';
   public hasError = true;
   public isSpecial = true;
@@ -51,5 +52,9 @@ export class HelloComponent implements OnInit {
   onClick(event: any) {
    console.log(event)
     this.greeting = `${event.type}!`
+  }
+
+  sayWelcomeToParent() {
+    this.childEvent.emit('Welcome to Parent component, Abdullah!')
   }
 }

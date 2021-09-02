@@ -326,7 +326,8 @@
 </div>
 
 <div class="content" role="main">
-  <hello [parentData]="name"></hello>
+  <h1>{{message}}</h1>
+  <hello (childEvent)="message=$event" [parentData]="name"></hello>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
