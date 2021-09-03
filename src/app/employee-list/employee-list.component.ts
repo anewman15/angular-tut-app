@@ -7,11 +7,12 @@ import { EmployeeService } from '../employee.service';
   styleUrls: ['./employee-list.component.scss']
 })
 export class EmployeeListComponent implements OnInit {
-  public employees = [];
-  
+  public employees : any[] = [];
+
   constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit(): void {
+    this.employees = this._employeeService.getEmployees();
   }
 
 }
