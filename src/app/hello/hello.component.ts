@@ -48,6 +48,8 @@ export class HelloComponent implements OnInit {
     sixth: 'Hasina',
     seventh: 'AKalam'
   }
+
+  public number = 4.567;
   constructor() { }
 
   ngOnInit(): void {
