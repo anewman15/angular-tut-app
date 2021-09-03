@@ -50,6 +50,7 @@ export class HelloComponent implements OnInit {
   }
 
   public number = 4.567;
+  public date = new Date();
   constructor() { }
 
   ngOnInit(): void {

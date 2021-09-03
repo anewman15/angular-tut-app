@@ -9,6 +9,15 @@
 <p>{{25 | currency: 'EUR'}}</p>
 <p>{{25 | currency: 'EUR': 'code'}}</p>
 <p>{{number | percent}}</p>
+<p>{{date}}</p>
+<p>{{date | date}}</p>
+<p>short: {{date | date:'short'}}</p>
+<p>short date: {{date | date:'shortDate'}}</p>
+<p>short time: {{date | date:'shortTime'}}</p>
+<p>{{date | date:'shortTime'}} {{date | date}}</p>
+<p>medium: {{date | date:'medium'}}</p>
+<p>medium date: {{date | date:'mediumDate'}}</p>
+<p>medium time: {{date | date:'mediumTime'}}</p>
 <div>
   <button (click)="onClick($event)">Greet</button>
 </div>
