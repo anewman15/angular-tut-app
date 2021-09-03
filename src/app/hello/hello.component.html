@@ -1,4 +1,8 @@
-<p>Hello {{name}}!</p>
+<p>Hello {{ name | lowercase }}!</p>
+<p>Hello {{ name | uppercase }}!</p>
+<p>Hello {{ name | titlecase }}!</p>
+<p>Hello {{ name | slice:3:6 }}!</p>
+<p>Hello {{ siblings | json }}!</p>
 <p [ngClass]="messageStyles">{{greetUser()}}</p>
 <p [style.color]="highlightColor">{{greetUser()}}</p>
 <p [ngStyle]="greetingStyles">{{greetUser()}}</p>

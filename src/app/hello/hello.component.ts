@@ -39,7 +39,15 @@ export class HelloComponent implements OnInit {
   public color = 'blue';
 
   public names = ['Abdullah',' Abu Bakar', 'Mamun', 'AKalam',' Nadira', 'Khadiza', 'Hasina', 'Sahera'];
-
+  public siblings = {
+    first: 'Abu Bakar',
+    second: 'Khadiza',
+    third: 'Sahera',
+    fourth: 'Mamun',
+    fifth: 'Nadira',
+    sixth: 'Hasina',
+    seventh: 'AKalam'
+  }
   constructor() { }
 
   ngOnInit(): void {
