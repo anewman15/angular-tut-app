@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'employee-list',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employee-list.component.scss']
 })
 export class EmployeeListComponent implements OnInit {
-
-  constructor() { }
+  public employees = [];
+  
+  constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit(): void {
   }
