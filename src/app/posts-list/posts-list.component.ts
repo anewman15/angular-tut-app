@@ -3,7 +3,7 @@ import { PostsService } from '../posts.service';
 import { IPost } from './post';
 
 @Component({
-  selector: 'app-posts-list',
+  selector: 'posts-list',
   templateUrl: './posts-list.component.html',
   styleUrls: ['./posts-list.component.scss']
 })
