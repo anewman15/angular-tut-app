@@ -8,6 +8,7 @@ import { HelloComponent } from './hello/hello.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PostsService } from './posts.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService, PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
