@@ -9,12 +9,14 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PostsService } from './posts.service';
+import { PostsListComponent } from './posts-list/posts-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    PostsListComponent
   ],
   imports: [
     BrowserModule,
